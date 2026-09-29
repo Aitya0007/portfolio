@@ -114,6 +114,10 @@ footer{text-align:center;padding:30px;color:var(--muted);border-top:1px solid va
 @media(max-width:760px){nav div a{display:none}.hero{text-align:center;justify-content:center}.social{justify-content:center}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.card{position:relative}
+.plink{display:inline-block;margin-top:16px;color:var(--c1);font-weight:600;text-decoration:none}
+.plink::after{content:"";position:absolute;inset:0}
+.card:hover .plink{color:#f472b6}
 </style>
 </head>
 <body>
@@ -178,10 +182,11 @@ footer{text-align:center;padding:30px;color:var(--muted);border-top:1px solid va
     <button class="on" data-f="all">All</button><button data-f="java">Java</button><button data-f="spring">Spring</button><button data-f="web">Web</button>
   </div>
   <div class="proj" id="proj">
+    <article class="card" data-c="java"><div class="top">Library System</div><div class="in"><h3>Library Management System</h3><p>Desktop application to manage books and members, with a Swing interface and database storage.</p><div class="tags"><span>Java Swing</span><span>JDBC</span><span>MySQL</span></div><a class="plink" href="https://github.com/Aitya0007/LibraryManagementSystem.git" target="_blank" rel="noopener">View on GitHub →</a></div></article>
     <article class="card" data-c="java web"><div class="top">Visitor Management</div><div class="in"><h3>Visitor Management System</h3><p>Built during my internship at RentMart IT Services to record and manage visitor entries and exits.</p><div class="tags"><span>Java</span><span>JDBC</span><span>MySQL</span></div></div></article>
     <article class="card" data-c="spring web"><div class="top">Clinic Website</div><div class="in"><h3>Clinic Website</h3><p>Full-stack website for a family member's clinic, with REST endpoints and a passcode-protected doctor dashboard.</p><div class="tags"><span>Spring Boot 3</span><span>MySQL</span><span>HTML/CSS/JS</span></div></div></article>
     <article class="card" data-c="spring"><div class="top">Microservices</div><div class="in"><h3>Containerized Microservices</h3><p>Two Spring Boot services talking over REST, containerized with Docker, deployed on Minikube, with a GitHub Actions CI build.</p><div class="tags"><span>Spring Boot</span><span>Docker</span><span>Minikube</span><span>GitHub Actions</span></div></div></article>
-    <article class="card" data-c="java"><div class="top">Library System</div><div class="in"><h3>Library Management System</h3><p>Desktop application to manage books and members, with a Swing interface and database storage.</p><div class="tags"><span>Java Swing</span><span>JDBC</span><span>MySQL</span></div></div></article>
+    
   </div>
 </section>
 
